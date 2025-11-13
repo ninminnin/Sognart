@@ -1,0 +1,294 @@
+.topheader {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25rem;
+}
+
+.Menu-Horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.Menu-Horizontal li a {
+  display: block;
+  text-decoration: none;
+}
+
+.Menu-Horizontal li a:hover {
+  color: white;
+  background-color: purple;
+}
+
+.Menu-Vertical {
+  padding: 0;
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 11.25rem;
+  background-color: white;
+}
+.Menu-Horizontal li:hover .Menu-Vertical {
+  display: block;
+}
+.Menu-Vertical li a {
+  padding: 0.938rem 0.938rem 0.938rem 1.25rem;
+}
+/*SECCION INICIO*/
+.seccion-productos {
+  padding: 3.75rem 1.25rem;
+  background-color: white;
+}
+.div-gral-prod {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+.div-prod-texto {
+  flex: 1;
+}
+.div-prod-texto h2 {
+  color: black;
+  margin-bottom: 1.875rem;
+}
+.div-prod-texto h3 {
+  color: purple;
+  margin-bottom: 0.938rem;
+}
+.div-prod-texto p {
+  color: black;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 1.875rem;
+}
+
+.div-prod-img {
+  flex: 1;
+}
+.div-prod-img img {
+  width: 100%;
+  max-width: 37.5rem;
+}
+/*SECCION galeria*/
+.seccion-galeria {
+  padding: 3.75rem 1.25rem;
+  background-color: black;
+}
+.div-gral-gal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+.div-gal-texto {
+  flex: 1;
+}
+.div-gal-texto h2 {
+  color: white;
+  margin-bottom: 1.875rem;
+}
+.div-gal-texto p {
+  color: white;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 1.875rem;
+}
+.div-gal-video {
+  flex: 1;
+}
+.div-gal-video iframe {
+  width: 100%;
+  max-width: 37.5rem;
+}
+/*SECCION PICS*/
+.seccion-imagenes {
+  padding: 3.75rem 1.25rem;
+  background-color: purple;
+}
+.div-gral-pics {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+
+.div-pics-texto h2 {
+  color: white;
+  margin-bottom: 1.875rem;
+  text-align: center;
+}
+
+.div-pics-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+.div-pics-img img {
+  width: 100%;
+  max-width: 37.5rem;
+}
+
+/*SECCION ARTISTAS*/
+.seccion-artistas {
+  padding: 3.75rem 1.25rem;
+  background-color: white;
+}
+.div-gral-artistas {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+
+.div-artistas-texto h2 {
+  color: black;
+  margin-bottom: 1.875rem;
+  text-align: center;
+}
+
+.div-artistas-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+.div-artistas-img img {
+  width: 100%;
+  max-width: 37.5rem;
+}
+
+/*SECCION titulo tnd*/
+.seccion-titulo {
+  padding: 3.75rem 1.25rem;
+  background-color: white;
+}
+.div-gral-titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+.div-titulo-texto h1 {
+  color: black;
+  margin-bottom: 1.875rem;
+  text-align: center;
+}
+/*SECCION TIENDA*/
+.seccion-tienda {
+  padding: 3.75rem 1.25rem;
+  background-color: white;
+}
+.div-gral-tnd {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+
+.div-tnd-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.25rem;
+}
+.div-tnd-texto {
+  flex: 1;
+}
+.div-tnd-texto h2 {
+  color: black;
+  margin-bottom: 1.875rem;
+}
+.div-tnd-texto p {
+  color: black;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 1.875rem;
+}
+.div-tnd-img {
+  flex: 1;
+}
+.div-tnd-img img {
+  width: 100%;
+  max-width: 37.5rem;
+  height: auto;
+}
+
+/*FORMULARIO*/
+.seccion-formulario {
+  background-color: purple;
+  padding: 2.5rem;
+  border: 0.188rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+.div-cont-formulario {
+  background-color: whitesmoke;
+  padding: 1.875rem;
+  border: 0.125rem solid rgb(105, 21, 105);
+  border-radius: 0.625rem; /*para el borde del cuadro*/
+  width: 100%;
+  max-width: 31.25rem;
+}
+.campo {
+  border: 0.063rem;
+  padding: 0.938rem;
+  margin-bottom: 0.938rem; /*para existencia de separacion*/
+  border-radius: 0.5rem;
+  background-color: white;
+}
+.formulario label {
+  line-height: 1.5;
+  display: block;
+  font-weight: 500; /*negrita del texto*/
+  margin-bottom: 0.5rem;
+  color: black;
+}
+/*inputs y select*/
+input[type="text"],
+select {
+  width: 95%;
+  padding: 0.625rem;
+  border: 0.125rem solid purple;
+  border-radius: 0.5rem;
+}
+.lista-checkbox,
+.lista-radio {
+  list-style: none;
+  padding: 0.625rem;
+  margin: 0;
+  border: 0.063rem;
+  background-color: whitesmoke;
+  border-radius: 0.313rem;
+}
+.formulario button {
+  background-color: orange;
+  color: black;
+  border: 0.063rem solid orange;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.313rem;
+  cursor: pointer;
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sognart</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Pie.css" />
+  </head>
+  <body>
+    <!--LOGO Y MENUS-->
+    <nav class="topheader">
+      <a herf="" class="logo">
+        <img height="60" width="120" src="logo/log.jpeg" alt="" />
+      </a>
+
+      <ul class="Menu-Horizontal">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="tienda.html">Tienda</a></li>
+        <li>
+          <a href="">Novedades</a>
+          <ul class="Menu-Vertical">
+            <li><a href="">Eventos</a></li>
+          </ul>
+        </li>
+        <li><a href="">Contactanos</a></li>
+      </ul>
+    </nav>
+    <!--SECCION INICIO-->
+    <section CLASS="seccion-productos">
+      <div class="div-gral-prod">
+        <div class="div-prod-texto">
+          <h2>Sobre nosotros</h2>
+          <p>
+            En Sognart encontrarás una amplia variedad de creaciones que
+            reflejan la diversidad y sensibilidad del arte contemporáneo: desde
+            pinturas al óleo y acuarelas llenas de matices, hasta técnicas
+            mixtas, esculturas, dibujos y fotografías que capturan momentos,
+            emociones y perspectivas únicas. Cada obra viene acompañada de la
+            historia, la inspiración y el talento de los artistas que le dan
+            vida, porque creemos que detrás de cada pieza hay un alma creativa
+            que merece ser conocida.
+          </p>
+          <p>
+            Más que una tienda, Sognart es un punto de encuentro para los
+            amantes del arte. Es un lugar donde la inspiración se comparte, la
+            creatividad se celebra y las conexiones entre artistas y público se
+            fortalecen. Queremos que cada visitante sienta la emoción de
+            recorrer una galería viva, donde cada clic abre la puerta a un nuevo
+            universo visual.
+          </p>
+          <p>
+            Explora nuestras colecciones, conoce a los artistas, apoya su
+            trabajo y sumérgete en una nueva forma de vivir el arte: más
+            cercana, más accesible y más humana. En Sognart, el arte no solo se
+            observa… se siente, se experimenta y se lleva contigo.
+          </p>
+          <h3>"Si el mundo fuera claro, el arte no existiría"</h3>
+          <p>-Albert Camus</p>
+        </div>
+
+        <div class="div-prod-img">
+          <img height="500" width="800" src="logo/collage.jpeg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!--SECCION GALERIA-->
+    <section CLASS="seccion-galeria">
+      <div class="div-gral-gal">
+        <div class="div-gal-texto">
+          <h2>Experiencia de una galeria online</h2>
+          <p>
+            Sognart es un espacio donde la experiencia de una galería de arte
+            cobra vida en el mundo digital. Nuestro propósito es acercar el arte
+            a todas las personas, rompiendo las barreras físicas y culturales
+            que muchas veces limitan su acceso. Transformamos las exposiciones
+            tradicionales en un entorno virtual inmersivo, diseñado para
+            invitarte a admirar, descubrir y adquirir obras únicas desde
+            cualquier lugar del mundo.
+          </p>
+        </div>
+
+        <div class="div-gal-video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/_l0Bpab1dIQ?si=yio8lYGWfrltieNs"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+    <!--SECCION PICS-->
+    <section CLASS="seccion-imagenes">
+      <div class="div-gral-pics">
+        <div class="div-pics-texto">
+          <h2>Conoce más de nuestras obras</h2>
+        </div>
+        <div class="div-pics-img">
+          <img height="500" width="800" src="logo/angel.jpeg" alt="" />
+          <img height="500" width="800" src="logo/mim.jpeg" alt="" />
+          <img height="500" width="800" src="logo/anxiety.jpeg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!--SECCION ARTISTAS-->
+    <section CLASS="seccion-artistas">
+      <div class="div-gral-artistas">
+        <div class="div-artistas-texto">
+          <h2>Conoce más de nuestros artistas más solicitados</h2>
+        </div>
+        <div class="div-artistas-img">
+          <img height="500" width="800" src="logo/gina.jpg" alt="" />
+          <img height="500" width="800" src="logo/ivan.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!---FORMULARIO-->
+    <section class="seccion-formulario">
+      <div class="div-cont-formulario">
+        <h2>Formulario de registro de Artista </h2>
+        <p>Complete todos los campos</p>
+        <form class="formulario">
+          <!---LABEL/INPUT-->
+          <div class="campo">
+            <label for="nombre">Nombres Completos:</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingrese sus nombres"
+            />
+            <!---placeholder aparece en la caja de texto y luego desaparece cuanto se hace click
+               para ingresar informacion requerida-->
+            <label for="apellido">Apellidos Completos:</label>
+            <input
+              type="text"
+              id="apellido"
+              name="apellido"
+              placeholder="Ingrese sus apellidos"
+            />
+          </div>
+          <!---MENU DESPLEGABLE(select/option)-->
+          <div class="campo">
+            <label for="nombre">Pais:</label>
+            <select id="pais" name="pais">
+              <option valor="">Seleccione un pais</option>
+              <option valor="peru">Peru</option>
+              <option valor="alemania">Alemania</option>
+              <option valor="brasil">Brasil</option>
+              <option valor="japon">Japon</option>
+            </select>
+          </div>
+          <!---CHECKBOX-->
+          <div class="campo">
+            <label>Intereses:</label>
+            <ul class="lista-checkbox">
+              <li>
+                <label
+                  ><input type="checkbox" name="intereses" value="acuarela" />acuarela</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="intereses" value="acrilico" />acrilico</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="intereses" value="lapiz" />lapiz</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" name="intereses" value="escultura" />escultura</label
+                >
+              </li>
+            </ul>
+          </div>
+          <!---RADIO-->
+          <div class="campo">
+            <label>Sexo:</label>
+            <ul class="lista-radio">
+              <li><label><input type="radio" name="sexo" value="femenino">Femenino</label></li>
+              <li><label><input type="radio" name="sexo" value="masculino">Masculino</label></li>
+              <li><label><input type="radio" name="sexo" value="otro">Otro</label></li>
+              <li><label><input type="radio" name="sexo" value="ninugno">Prefiero no decirlo</label></li>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+     <!-- PIE DE PAGINA -->
+
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- Logo y nombre de sitio -->
+          <div class="footer-brand">
+            <img
+              src="Imagenes/senati-logo.png"
+              alt="Logo"
+              class="footer-logo"
+            />
+            <p>SENATI</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          <!-- Enlaces legales -->
+          <div class="footer-links">
+            <h4>Legal</h4>
+            <a href="/Documentos/3.politica-privacidad.pdf"
+              >Política de Privacidad</a
+            >
+            <!-- Dentro de href llama a un documento pdf con la poltica-->
+            <a href="#">Términos y Condiciones</a>
+            <!-- Dentro de href llama a un documento pdf con los terminos y condiciones-->
+            <a href="/Documentos/LeyProteccionDatos.pdf">Protección de Datos</a>
+          </div>
+
+          <!-- Redes sociales con íconos personalizados -->
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                alt="Facebook"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                alt="Instagram"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                alt="LinkedIn"
+                class="social-icon"
+            /></a>
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                alt="Twitter"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
