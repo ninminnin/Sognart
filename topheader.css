@@ -1,0 +1,42 @@
+.topheader {
+  position: fixed;
+  background-color: white;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25rem;
+}
+
+.Menu-Horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.Menu-Horizontal li a {
+  display: block;
+  text-decoration: none;
+}
+
+.Menu-Horizontal li a:hover {
+  color: white;
+  background-color: purple;
+}
+
+.Menu-Vertical {
+  padding: 0;
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 11.25rem;
+  background-color: white;
+}
+.Menu-Horizontal li:hover .Menu-Vertical {
+  display: block;
+}
+.Menu-Vertical li a {
+  padding: 0.938rem 0.938rem 0.938rem 1.25rem;
+}
