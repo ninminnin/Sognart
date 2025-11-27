@@ -69,3 +69,17 @@
   object-fit: cover;
   display: block;
 }
+.btn-añadir {
+  margin-top: 1rem;
+  background-color: orange;
+  color: white;
+  border: 0.125rem solid orange;
+  padding: 0.625rem 1.25rem;
+  cursor: pointer;
+}
+
+.btn-añadir:hover {
+  background-color: #828382;
+  color: white;
+  border: 0.125rem solid #828382;
+}
