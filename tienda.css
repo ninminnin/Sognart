@@ -17,10 +17,6 @@
   max-width: 70rem;
   margin-top: 3.1rem;
 }
-.div-titulo-texto h1 {
-  color: white;
-  margin-bottom: 1.875rem;
-}
 /*SECCION TIENDA*/
 .seccion-tienda {
   padding: 3.75rem 1.25rem;
@@ -76,6 +72,8 @@
   border: 0.125rem solid orange;
   padding: 0.625rem 1.25rem;
   cursor: pointer;
+  border-radius: 0.313rem;
+  font-size: 1rem;
 }
 
 .btn-añadir:hover {

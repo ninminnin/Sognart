@@ -1,0 +1,29 @@
+.evento {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 2px solid purple;
+  max-width: none;
+  width: 93.5%;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+.evento h2 {
+  margin-bottom: 0.5rem;
+  color: black;
+}
+.btn-detalles {
+  background-color: orange;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 0.313rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+.btn-detalles:hover {
+  background-color: gray;
+}
