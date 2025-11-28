@@ -1,0 +1,45 @@
+/*SECCION titulo tnd*/
+.seccion-titulo {
+  padding: 3.2rem 1.25rem;
+  display: flex;
+  background-color: purple;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.div-gral-titulo {
+  margin-top: 5rem;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 70rem;
+  margin-top: 3.1rem;
+}
+
+.general-formulario {
+  padding: 2.5rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  background-image: url("./logo/unidos.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+textarea {
+  width: 95%;
+  padding: 0.625rem;
+  border: 0.125rem solid purple;
+  border-radius: 0.5rem;
+}
+.div-formulario {
+  background-color: white;
+  padding: 1.875rem;
+  border: 0.4rem solid purple;
+  border-radius: 0.625rem; /*para el borde del cuadro*/
+  width: 100%;
+  max-width: 31.25rem;
+}
