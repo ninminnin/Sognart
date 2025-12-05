@@ -12,7 +12,7 @@
   background-size: contain;
   background-position: left center;
   background-repeat: no-repeat;
-  background-color: #000;
+  background-color: white;
 
   /* IMPORTANTE: elimina el padding para que la derecha quede pegada */
   padding: 0;
@@ -137,6 +137,7 @@
     padding: 1rem;
   }
 }
+
 
 
 
