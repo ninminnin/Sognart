@@ -9,9 +9,10 @@
   
   /* Imagen ocupando TODA la izquierda */
   background-image: url("logo/gatos3.png");
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: left center;
   background-repeat: no-repeat;
+  background-color: #000;
 
   /* IMPORTANTE: elimina el padding para que la derecha quede pegada */
   padding: 0;
@@ -20,7 +21,7 @@
 /* CAJA DEL FORMULARIO A LA DERECHA, FIJA, SIN MOVERSE */
 .login-box {
   background: white;
-  width: 40%;        /* Ajustable: 35%, 40%, 45%… */
+  width: 30%;        /* Ajustable: 35%, 40%, 45%… */
   min-height: 100vh; /* Toma TODA la altura */
   margin-left: auto; /* Esto la empuja totalmente a la derecha */
 
@@ -129,6 +130,7 @@
     padding: 1rem; /* Aumenta el padding para un mejor toque táctil (16px) */
   }
 }
+
 
 
 
