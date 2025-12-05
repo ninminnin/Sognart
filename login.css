@@ -6,62 +6,43 @@ html, body {
   padding: 0; 
   width: 100%; 
   height: 100%; 
-  overflow-x: hidden; 
+  overflow: hidden; 
 }
 
 /* CONTENEDOR PRINCIPAL */
 .login-container {
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
-  
+
+  /* Imagen en la izquierda */
   background-image: url("logo/gatos4.png");
   background-size: contain;
   background-position: left center;
   background-repeat: no-repeat;
   background-color: white;
-
-  padding: 0;
 }
 
 /* CAJA DEL FORMULARIO */
 .login-box {
-  background-color: white;
   width: 33%;
-  min-height: 100vh;
-  margin-left: auto;
-
-  padding: 2.5rem 2rem;
-
+  height: 100vh;
+  
   display: flex;
   flex-direction: column;
-  align-items: center;
-
-  /* MOVER EL FORM ARRIBA */
-  justify-content: flex-start;
-  padding-top: 3rem;
+  justify-content: center;   /* Centrado vertical */
+  align-items: center;       /* Centrado horizontal */
+  padding: 2rem;
+  background: white;
 }
-
 .login-box form {
   width: 100%;
-  max-width: 360px; /* controla tamaño uniforme */
-}
-
-/* LOGO MÁS ARRIBA Y CENTRADO */
-.logo-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1.5rem; /* menos espacio */
-}
-
-.logo-container img {
-  width: 140px;
+  max-width: 380px;
 }
 
 .login-box h2 {
   font-family: "Roboto Condensed", sans-serif;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
   color: black;
   font-size: 1.8rem;
   text-align: center;
@@ -70,23 +51,22 @@ html, body {
 /* INPUTS */
 .input-group {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 1.25rem;
   text-align: left;
 }
 
 .input-group label {
   display: block;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
   font-weight: bold;
   color: black;
   font-family: "Montserrat", sans-serif;
 }
 
-/* INPUT MISMO TAMAÑO DEL BOTÓN */
 .input-group input {
   width: 100%;
-  padding: 0.8rem;
-  border: 2px solid purple;
+  padding: 0.75rem;
+  border: 1px solid purple;
   border-radius: 0.3125rem;
   font-size: 1rem;
   transition: border-color 0.3s;
@@ -97,10 +77,10 @@ html, body {
   outline: none;
 }
 
-/* BOTÓN*/
+/* BOTÓN */
 .login-button {
   width: 100%;
-  padding: 0.85rem;
+  padding: 0.75rem;
   border: none;
   border-radius: 0.3125rem;
   background-color: orange;
@@ -108,13 +88,12 @@ html, body {
   font-size: 1.1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 0.5rem;
+  margin-top: 0.625rem;
 }
 
 .login-button:hover {
   background-color: gray;
 }
-
 /* -------------------------------------- */
 /* RESPONSIVE MÓVIL */
 /* -------------------------------------- */
@@ -156,4 +135,5 @@ html, body {
     padding: 1rem;
   }
 }
+
 
