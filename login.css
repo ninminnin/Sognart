@@ -8,7 +8,7 @@
   width: 100%;
   
   /* Imagen ocupando TODA la izquierda */
-  background-image: url("logo/gatos.png");
+  background-image: url("logo/gatos3.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -121,5 +121,6 @@
     padding: 1rem; /* Aumenta el padding para un mejor toque táctil (16px) */
   }
 }
+
 
 
