@@ -1,44 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-/* Contenedor principal: Centra el formulario */
+
+/* CONTENEDOR PRINCIPAL: DIVIDIR LA PANTALLA */
 .login-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
   width: 100%;
-  /* Fondo atractivo para la vista de escritorio */
-  background-image: url("logo/gatos.png")
-  padding: 1.25rem; /* 20px de padding */
+  
+  /* Imagen ocupando TODA la izquierda */
+  background-image: url("logo/gatos.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* IMPORTANTE: elimina el padding para que la derecha quede pegada */
+  padding: 0;
 }
 
-/* La caja del formulario */
+/* CAJA DEL FORMULARIO A LA DERECHA, FIJA, SIN MOVERSE */
 .login-box {
   background: white;
-  padding: 2.5rem; /* 40px */
-  border-radius: 0.625rem; /* 10px */
-  box-shadow: 0 0.25rem 0.9375rem rgba(31, 25, 7, 0.2); /* Sombra */
-  width: 100%;
-  max-width: 25rem; /* 400px, el ancho máximo */
+  width: 40%;        /* Ajustable: 35%, 40%, 45%… */
+  min-height: 100vh; /* Toma TODA la altura */
+  margin-left: auto; /* Esto la empuja totalmente a la derecha */
+
+  padding: 2.5rem;
+  border-radius: 0;
+  box-shadow: -2px 0 15px rgba(0,0,0,0.1); /* sombra hacia la izq */
   text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* contenido centrado verticalmente */
 }
 
 .login-box h2 {
   font-family: "Roboto Condensed", sans-serif;
-  margin-bottom: 1.5625rem; /* 25px */
+  margin-bottom: 1.5625rem;
   color: black;
   font-size: 1.8rem;
 }
 
-/* División para agrupar Label e Input */
+/* INPUTS */
 .input-group {
-  margin-bottom: 1.25rem; /* 20px */
+  margin-bottom: 1.25rem;
   text-align: left;
 }
 
 .input-group label {
   display: block;
-  margin-bottom: 0.5rem; /* 8px */
+  margin-bottom: 0.5rem;
   font-weight: bold;
   color: black;
   font-family: "Montserrat", sans-serif;
@@ -46,9 +57,9 @@
 
 .input-group input {
   width: 100%;
-  padding: 0.75rem; /* 12px */
+  padding: 0.75rem;
   border: 1px solid purple;
-  border-radius: 0.3125rem; /* 5px */
+  border-radius: 0.3125rem;
   font-size: 1rem;
   transition: border-color 0.3s;
 }
@@ -58,18 +69,18 @@
   outline: none;
 }
 
-/* Estilo del botón */
+/* BOTÓN */
 .login-button {
   width: 100%;
-  padding: 0.75rem; /* 12px */
+  padding: 0.75rem;
   border: none;
-  border-radius: 0.3125rem; /* 5px */
+  border-radius: 0.3125rem;
   background-color: orange;
   color: white;
   font-size: 1.1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 0.625rem; /* 10px */
+  margin-top: 0.625rem;
 }
 
 .login-button:hover {
@@ -110,4 +121,5 @@
     padding: 1rem; /* Aumenta el padding para un mejor toque táctil (16px) */
   }
 }
+
 
