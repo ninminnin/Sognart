@@ -8,67 +8,85 @@ html, body {
   height: 100%; 
   overflow-x: hidden; 
 }
-/* CONTENEDOR PRINCIPAL: DIVIDIR LA PANTALLA */
 
+/* CONTENEDOR PRINCIPAL */
 .login-container {
   display: flex;
   min-height: 100vh;
   width: 100%;
   
-  /* Imagen ocupando TODA la izquierda */
   background-image: url("logo/gatos4.png");
   background-size: contain;
   background-position: left center;
   background-repeat: no-repeat;
   background-color: white;
 
-  /* IMPORTANTE: elimina el padding para que la derecha quede pegada */
   padding: 0;
 }
 
-/* CAJA DEL FORMULARIO A LA DERECHA, FIJA, SIN MOVERSE */
+/* CAJA DEL FORMULARIO */
 .login-box {
   background-color: white;
-  width: 33%;        /* Ajustable: 35%, 40%, 45%… */
-  min-height: 100vh; /* Toma TODA la altura */
-  margin-left: auto; /* Esto la empuja totalmente a la derecha */
-  padding: 3rem 2rem;
-  align-items: center;
+  width: 33%;
+  min-height: 100vh;
+  margin-left: auto;
+
+  padding: 2.5rem 2rem;
+
   display: flex;
   flex-direction: column;
-  justify-content: center; /* contenido centrado verticalmente */
+  align-items: center;
+
+  /* MOVER EL FORM ARRIBA */
+  justify-content: flex-start;
+  padding-top: 3rem;
 }
 
 .login-box form {
   width: 100%;
-  max-width: 380px;
+  max-width: 360px; /* controla tamaño uniforme */
 }
+
+/* LOGO MÁS ARRIBA Y CENTRADO */
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem; /* menos espacio */
+}
+
+.logo-container img {
+  width: 140px;
+}
+
 .login-box h2 {
   font-family: "Roboto Condensed", sans-serif;
-  margin-bottom: 1.5625rem;
+  margin-bottom: 1.2rem;
   color: black;
   font-size: 1.8rem;
+  text-align: center;
 }
 
 /* INPUTS */
 .input-group {
   width: 100%;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   text-align: left;
 }
 
 .input-group label {
   display: block;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
   font-weight: bold;
   color: black;
   font-family: "Montserrat", sans-serif;
 }
 
+/* INPUT MISMO TAMAÑO DEL BOTÓN */
 .input-group input {
   width: 100%;
-  padding: 0.75rem;
-  border: 1px solid purple;
+  padding: 0.8rem;
+  border: 2px solid purple;
   border-radius: 0.3125rem;
   font-size: 1rem;
   transition: border-color 0.3s;
@@ -79,10 +97,10 @@ html, body {
   outline: none;
 }
 
-/* BOTÓN */
+/* BOTÓN (centrado y con mismo ancho) */
 .login-button {
   width: 100%;
-  padding: 0.75rem;
+  padding: 0.85rem;
   border: none;
   border-radius: 0.3125rem;
   background-color: orange;
@@ -90,7 +108,7 @@ html, body {
   font-size: 1.1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 0.625rem;
+  margin-top: 0.5rem;
 }
 
 .login-button:hover {
@@ -98,57 +116,43 @@ html, body {
 }
 
 /* -------------------------------------- */
-/* MEDIA QUERY: RESPONSIVE MÓVILES */
+/* RESPONSIVE MÓVIL */
 /* -------------------------------------- */
 
 @media (max-width: 600px) {
-  
+
   .login-container {
-    width: 100%;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    padding: 0;
     background: none;
+    width: 100%;
+    min-height: 100vh;
     overflow: hidden;
   }
 
-  /* FRANJA SUPERIOR CON IMAGEN (como tu ejemplo) */
   .header-imag {
     width: 100%;
-    height: 20vh; /* puedes ajustar a 25vh, 35vh, etc */
+    height: 25vh;
     background-image: url("logo/gatos3.png");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
   }
 
-  /* FORMULARIO OCUPANDO EL RESTO */
   .login-box {
     width: 100%;
     flex: 1;
-    height: 80vh;           /* resto de pantalla sin scroll */
+    height: 75vh;
     padding: 1.5rem;
-    box-shadow: none;
-    border-radius: 0;
-    border: none;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-top: 2rem;
   }
 
   .login-box h2 {
     font-size: 1.7rem;
-    text-align: center;  /* igual al diseño que enviaste */
   }
 
   .input-group input {
     padding: 1rem;
   }
 }
-
-
-
-
-
-
