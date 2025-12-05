@@ -95,10 +95,13 @@
 @media (max-width: 600px) {
   /* El contenedor principal simula una vista de aplicación */
   .login-container {
-    padding: 0; /* Quita el padding exterior */
-    background: #fff; /* Fondo blanco liso */
-    align-items: flex-start; /* Mueve el formulario arriba */
-    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;         /* ocupar todo sin scroll */
+    overflow: hidden;       /* bloquea scroll */
+    padding: 0;
+    background: none; 
   }
 
   /* La caja del formulario se expande y pierde los adornos de tarjeta */
@@ -121,6 +124,7 @@
     padding: 1rem; /* Aumenta el padding para un mejor toque táctil (16px) */
   }
 }
+
 
 
 
