@@ -106,13 +106,18 @@
 
   /* La caja del formulario se expande y pierde los adornos de tarjeta */
   .login-box {
-    padding: 1.5rem; /* 24px de padding interno */
-    margin-top: 2rem; /* 32px de espacio superior */
+    padding: 1.5rem;/* 24px de padding interno */
+    height: 70vh;
+    margin-top: 20rem; /* 32px de espacio superior */
     width: 100%;
     max-width: 100%;
     box-shadow: none; /* Elimina la sombra */
     border-radius: 0; /* Elimina el borde redondeado */
     border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Formulario centrado */
+    overflow: hidden;
   }
 
   .login-box h2 {
@@ -124,6 +129,7 @@
     padding: 1rem; /* Aumenta el padding para un mejor toque táctil (16px) */
   }
 }
+
 
 
 
