@@ -140,16 +140,34 @@ html, body {
     display: flex;
     justify-content: flex-start;
     padding-top: 2rem;
+    align-items: center;
+  }
+
+  .login-box form {
+    width: 100%;
+    max-width: 320px; /* Puedes subir a 340px o 360px si quieres más ancho */
+  }
+
+  .input-group {
+    width: 100%;
+  }
+
+  .input-group input {
+    width: 100%;     /* Igual que el botón */
+    padding: 1rem;
+  }
+
+  .login-button {
+    width: 100%;     /* MISMO ancho que inputs */
+    max-width: 100%; /* Asegura igualdad */
   }
 
   .login-box h2 {
     font-size: 1.7rem;
-  }
-
-  .input-group input {
-    padding: 1rem;
+    text-align: center;
   }
 }
+
 
 
 
