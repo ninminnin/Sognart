@@ -17,7 +17,7 @@ html, body {
 
   /* Imagen en la izquierda */
   background-image: url("logo/gatos4.png");
-  background-size: contain;
+  background-size: cover;
   background-position: left center;
   background-repeat: no-repeat;
   background-color: white;
@@ -111,7 +111,7 @@ html, body {
 
   .header-imag {
     width: 100%;
-    height: 25vh;
+    height: 20vh;
     background-image: url("logo/gatos3.png");
     background-size: cover;
     background-position: center;
@@ -135,5 +135,6 @@ html, body {
     padding: 1rem;
   }
 }
+
 
 
