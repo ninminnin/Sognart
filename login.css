@@ -95,13 +95,13 @@
 @media (max-width: 600px) {
   
   .login-container {
+    width: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100vh;   
-    overflow: hidden;
     padding: 0;
     background: none;
+    overflow: hidden;
   }
 
   /* FRANJA SUPERIOR CON IMAGEN (como tu ejemplo) */
@@ -112,18 +112,17 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    flex-shrink: 0;
   }
 
   /* FORMULARIO OCUPANDO EL RESTO */
   .login-box {
     width: 100%;
+    flex: 1;
     height: 80vh;           /* resto de pantalla sin scroll */
     padding: 1.5rem;
     box-shadow: none;
     border-radius: 0;
     border: none;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -138,6 +137,7 @@
     padding: 1rem;
   }
 }
+
 
 
 
