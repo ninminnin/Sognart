@@ -97,7 +97,7 @@ html, body {
   outline: none;
 }
 
-/* BOTÓN (centrado y con mismo ancho) */
+/* BOTÓN*/
 .login-button {
   width: 100%;
   padding: 0.85rem;
@@ -156,3 +156,4 @@ html, body {
     padding: 1rem;
   }
 }
+
