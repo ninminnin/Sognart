@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
+/* ============================
+   GLOBAL – elimina scroll
+   ============================ */
 html, body { 
   margin: 0; 
   padding: 0; 
@@ -9,32 +12,39 @@ html, body {
   overflow: hidden; 
 }
 
-/* CONTENEDOR PRINCIPAL */
+/* ============================
+   CONTENEDOR PRINCIPAL DESKTOP
+   ============================ */
 .login-container {
   display: flex;
   height: 100vh;
   width: 100%;
-
-  /* Imagen en la izquierda */
+  
+  /* Imagen izquierda */
   background-image: url("logo/gatos4.png");
   background-size: cover;
-  background-position: left center;
+  background-position: center left;
   background-repeat: no-repeat;
-  background-color: white;
+
+  /* Esto evita que la imagen haga zoom extraño */
+  background-attachment: local;
 }
 
-/* CAJA DEL FORMULARIO */
+/* ============================
+   CAJA FORMULARIO DERECHA
+   ============================ */
 .login-box {
   width: 33%;
   height: 100vh;
-  
+
   display: flex;
   flex-direction: column;
-  justify-content: center;   /* Centrado vertical */
-  align-items: center;       /* Centrado horizontal */
+  justify-content: center; 
+  align-items: center; 
   padding: 2rem;
   background: white;
 }
+
 .login-box form {
   width: 100%;
   max-width: 380px;
@@ -48,7 +58,9 @@ html, body {
   text-align: center;
 }
 
-/* INPUTS */
+/* ============================
+   INPUTS
+   ============================ */
 .input-group {
   width: 100%;
   margin-bottom: 1.25rem;
@@ -77,7 +89,9 @@ html, body {
   outline: none;
 }
 
-/* BOTÓN */
+/* ============================
+   BOTÓN
+   ============================ */
 .login-button {
   width: 100%;
   padding: 0.75rem;
@@ -94,6 +108,7 @@ html, body {
 .login-button:hover {
   background-color: gray;
 }
+
 /* -------------------------------------- */
 /* RESPONSIVE MÓVIL */
 /* -------------------------------------- */
@@ -135,6 +150,7 @@ html, body {
     padding: 1rem;
   }
 }
+
 
 
 
