@@ -43,3 +43,44 @@ textarea {
   width: 100%;
   max-width: 31.25rem;
 }
+
+@media (max-width: 768px) {
+
+  /* ======== SECCIÓN TÍTULO ======== */
+  .seccion-titulo {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .div-gral-titulo {
+    margin-top: 6rem;
+    padding: 0 1rem;
+  }
+
+  .div-gral-titulo h1 {
+    font-size: 1.4rem;   /* más pequeño para móvil */
+  }
+
+  .div-gral-titulo p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  /* ======== FORMULARIO GENERAL ======== */
+  .general-formulario {
+    padding: 1.5rem 0.8rem;
+    background-size: cover;
+  }
+
+  .div-formulario {
+    width: 100%;
+    max-width: 25rem;      /* más pequeño en móvil */
+    padding: 1.5rem;
+    border-width: 0.3rem;  /* bordes más suaves */
+  }
+
+  textarea {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+}
