@@ -19,11 +19,14 @@
 .Menu-Horizontal li a {
   display: block;
   text-decoration: none;
+  transition: all 0.2s ease;
 }
 
 .Menu-Horizontal li a:hover {
   color: white;
   background-color: orange;
+  padding: 0.7rem 1rem;
+  border-radius: 4px;
 }
 
 .Menu-Vertical {
