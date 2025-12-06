@@ -19,7 +19,6 @@
 .Menu-Horizontal li a {
   display: block;
   text-decoration: none;
-  transition: all 0.2s ease;
 }
 
 .Menu-Horizontal li a:hover {
