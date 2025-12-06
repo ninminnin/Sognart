@@ -13,7 +13,7 @@
   .menu-toggle {
     display: block; /* Mostrar botón hamburguesa en móviles */
     color: black;
-    margin-right: 2rem;
+    margin-right: 4rem;
   }
 
   .Menu-Horizontal {
@@ -43,5 +43,6 @@
     border-bottom: none;
   }
 }
+
 
 
