@@ -24,6 +24,10 @@
     position: absolute;
     top: 5rem; /* Debajo del menú fijo */
     left: 0;
+    padding: 0.5rem 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* SOMBRA*/
+    transition: all 0.3s ease; /* TRANSICIÓN SUAVE */
+    z-index: 999; 
   }
 
   .Menu-Horizontal.active {
@@ -32,6 +36,12 @@
 
   .Menu-Horizontal li {
     border-bottom: 1px solid #ccc; /* Líneas separadoras */
+    padding: 1rem 1.2rem;       /* Más grande para fácil click */
+    font-size: 1rem;
+  }
+  .Menu-Horizontal li:last-child {
+    border-bottom: none;
   }
 }
+
 
