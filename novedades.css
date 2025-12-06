@@ -27,3 +27,27 @@
 .btn-detalles:hover {
   background-color: gray;
 }
+/*RESSPOSIVEEVEVE*/
+@media (max-width: 768px) {
+  .evento {
+    width: 90%;
+    margin: 1rem auto; /* centrado */
+    padding: 1rem;
+  }
+
+  .evento h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .evento p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .btn-detalles {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}
