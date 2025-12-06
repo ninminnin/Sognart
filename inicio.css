@@ -196,3 +196,74 @@ select {
 .formulario button:hover {
   background-color: gray;
 }
+
+/*RESPONSIVEEEE*/
+@media (max-width: 768px) {
+
+  /* ===== SECCIÓN PRODUCTOS ===== */
+  .div-gral-prod {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .div-prod-texto p {
+    text-align: justify;
+  }
+
+  .div-prod-img img {
+    max-width: 28rem;
+    width: 100%;
+  }
+
+  /* ===== SECCIÓN GALERÍA ===== */
+  .div-gral-gal {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
+  .div-gal-texto p {
+    text-align: justify;
+  }
+
+  .div-gal-video iframe {
+    max-width: 28rem;
+    width: 100%;
+  }
+
+  /* ===== SECCIÓN IMÁGENES ===== */
+  .div-pics-img {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .div-pics-img img {
+    max-width: 28rem;
+  }
+
+  /* ===== SECCIÓN ARTISTAS ===== */
+  .div-artistas-img {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .div-artistas-img img {
+    max-width: 28rem;
+  }
+
+  /* ===== FORMULARIO ===== */
+  .div-cont-formulario {
+    max-width: 26rem;
+    padding: 1.5rem;
+  }
+
+  input[type="text"],
+  select {
+    width: 100%;   /* Mejor ajuste en pantallas medianas */
+  }
+
+  .formulario button {
+    width: 50%;   /* Botón más ancho en tablet */
+  }
+}
